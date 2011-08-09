@@ -1,2 +1,2 @@
-web: coffee app.coffee
+web: node app.js
 
