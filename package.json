@@ -1,0 +1,10 @@
+{
+  "name": "toto",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "2.4.4",
+    "coffee-script": "1.1.2",
+    "coffeekup": "0.3.0beta"
+  }
+}
+
