@@ -6,7 +6,9 @@
   app.set('view engine', 'coffee');
   app.use(express.static(__dirname + '/public'));
   app.get('/', function(request, response) {
-    return response.render('index');
+    return response.render('index', {
+      title: "Tasks"
+    });
   });
   app.listen(process.env.PORT || 3000, function() {
     return console.log("Listening on port " + (process.env.PORT || 3000));
