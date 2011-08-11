@@ -6,6 +6,7 @@ app.set 'view engine', 'coffee'
 
 app.use express.static(__dirname + '/public')
 
+# Render the index layout
 app.get '/', (request, response) ->
   response.render 'index', title: "Tasks"
 
