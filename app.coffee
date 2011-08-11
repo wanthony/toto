@@ -9,6 +9,7 @@ app.use express.static(__dirname + '/public')
 app.get '/', (request, response) ->
   response.render 'index', title: "Tasks"
 
+# Listen for HTTP requests on port 3000
 app.listen process.env.PORT or 3000, ->
   console.log "Listening on port #{process.env.PORT or 3000}"
 
